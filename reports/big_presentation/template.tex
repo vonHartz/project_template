@@ -1,0 +1,154 @@
+\documentclass[aspectratio=169,12pt]{beamer}
+\usepackage{settings}
+
+% ________________________________________________________________________________________
+% Form guidelines
+% ________________________________________________________________________________________
+
+% Quotes from other work should have quotationmarks
+% Figrures :   Source: XY eet al [YEAR]
+% Citations in text grey [Author, year]
+
+% Font: sans serif > serif in readability, but = for very high resolution beamers
+% Altert in bold / blue colour
+% text / numbers in figure should have same size as text
+% figures should have same background colour
+% place graphics to left of the text (eyes from left to right) if applicable
+
+% English: capitalize all words in a frame title except "a", "the", ...
+% correct punctuation, none after phrases | complete after complete sentences
+
+% Focus on main message with tables (only part of it!)
+% Remove captions and other distracting stuff from figures, like legend maybe (dejunkif)
+% Highlight important numbers in tables
+% Show tables, algorithms, (maybe blocks) step by step
+% Abstract heavy notation
+
+
+% ________________________________________________________________________________________
+% Content meta guidelines
+% ________________________________________________________________________________________
+
+% 1 content slide / minute good guideline
+% Never 3 lines / bullet point. Only sometimes 2 is ok.
+% Frame 20-40 words, maximum 80
+% itemize/description > phrases > sentences
+
+% Motivation section needs a picture fast
+% Also have some motivation throughout the talk
+
+% Maybe use explicit thank you in bottom of conclusion
+% Leave conclusions slide open (no thank you slide)
+% Do not use bibliographies + never use footnotes
+
+
+% ________________________________________________________________________________________
+% Content guidelines
+% ________________________________________________________________________________________
+
+
+% Write down assumptions of what audience knows
+% Plan what to present (background from other papers too)
+% Plan what to skip explicitly
+% Plan what the key points are, work around them
+
+% What audience gets > which points were covered
+% In case of doubt leave out details
+% High level >>> low level >>> high level
+% Attention >>> what + why they should care >>> tell >>> summarize
+% T-structure: broad coverage of topic and depth for one aspect
+% Convince audience: problem worthwhile + hard (not already solved/not good) + have solved
+
+
+% ________________________________________________________________________________________
+% Presenting guidelines
+% ________________________________________________________________________________________
+
+% Speaking too slowly is almost impossible
+
+% Tell them what to tell | Tell them | Tell them what told also apples to slides
+
+% Write out: 1st Minute + closing statement (practice lots of times)
+% End with final "Thank you"
+
+% Questions: take bullet point notes
+% Think before answering a question
+% Repeat question
+% Be willing to say "I do not know" / "That is not my area of expertise" / ..
+
+
+% ________________________________________________________________________________________
+% Title page settings
+% ________________________________________________________________________________________
+
+\title{Title}
+\subtitle{Subtitle}
+\author{Author}
+\date{date + place}
+
+
+
+\begin{document}
+% ________________________________________________________________________________________
+% ________________________________________________________________________________________
+
+
+\frame[noframenumbering, plain]{\titlepage}
+
+
+% ________________________________________________________________________________________
+% [30 sec - 2 min] -- Motivate problem/topic
+% ________________________________________________________________________________________
+\section*{Motivation}
+\import{sections/}{1-motivation}
+
+
+% ________________________________________________________________________________________
+% [5 min] -- explain problem and solution on a high level
+% ________________________________________________________________________________________
+\section{Overview}
+\import{sections/}{2-overview}
+
+
+% ________________________________________________________________________________________
+% [5-10 min] -- explain some parts with more details
+% ________________________________________________________________________________________
+\section{Detail}
+\import{sections/}{3a-detail}
+%\import{sections/}{3b-detail}
+
+
+% ________________________________________________________________________________________
+% [5 min] -- theoretical and/or empirical results>
+% ________________________________________________________________________________________
+\section{Results}
+\import{sections/}{4-results}
+
+
+% ________________________________________________________________________________________
+% [5 min] -- discussion
+% ________________________________________________________________________________________
+\section{Discussion}
+\import{sections/}{5-discussion}
+
+
+% ________________________________________________________________________________________
+% [30 sec] -- conclude
+% ________________________________________________________________________________________
+\section*{Conclusion}
+\import{sections/}{6-conclusion}
+
+
+% ________________________________________________________________________________________
+% [Optional] -- appendix
+% ________________________________________________________________________________________
+\appendix
+
+\section*{Appendix}
+\frame[noframenumbering, plain]{\sectionpage}
+\import{sections/}{7-appendix}
+
+
+
+
+\end{document}

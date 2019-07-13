@@ -1,0 +1,21 @@
+# Experiments and data
+experiments/cluster_oe/*
+datasets/*
+
+# .miniconda
+.miniconda/bin/
+.miniconda/compiler_compat/
+.miniconda/conda-meta/
+.miniconda/condabin/
+.miniconda/shell/
+.miniconda/envs/
+.miniconda/etc/
+.miniconda/include/
+.miniconda/lib/
+.miniconda/pkgs/
+.miniconda/share/
+.miniconda/ssl/
+.miniconda/man/
+.miniconda/libexec/
+.miniconda/x86_64-conda_cos6-linux-gnu/
+.miniconda/LICENSE.txt
