@@ -137,4 +137,4 @@ Files prefixed with an underscore (e.g., `_PRIVATE_FILE`) are not used outside o
 
 ## License
 
-[Apache 2.0](LICENSE)
+[The Unlicense](LICENSE)
