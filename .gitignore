@@ -1,21 +1,31 @@
+# Python
+__pycache__
+
+
 # Experiments and data
-experiments/cluster_oe/*
+experiments/*
 datasets/*
 
-# .miniconda
-.miniconda/bin/
-.miniconda/compiler_compat/
-.miniconda/conda-meta/
-.miniconda/condabin/
-.miniconda/shell/
-.miniconda/envs/
-.miniconda/etc/
-.miniconda/include/
-.miniconda/lib/
-.miniconda/pkgs/
-.miniconda/share/
-.miniconda/ssl/
-.miniconda/man/
-.miniconda/libexec/
-.miniconda/x86_64-conda_cos6-linux-gnu/
-.miniconda/LICENSE.txt
+
+# Latex
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz
+*.dpth
+*.md5
+*.dep
+*.auxlock
+*.snm
+*.out
+*.nav
+*.toc
+
+# Reports
+reports/**/*.pdf
+reports/**/*plots
+reports/**/data
+
+# Submission
+submission/args/*.args

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+source utils/activate_poetry
+source utils/activate_miniconda
+source utils/activate_environment
+source utils/activate_just

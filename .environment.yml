@@ -1,7 +1,0 @@
-name: todo
-channels:
-dependencies:
-  - python=3.7
-  - pip
-  - pip:
-    - pre-commit

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+CONDA_DIR=$HOME/.miniconda3
+source $CONDA_DIR/bin/activate
