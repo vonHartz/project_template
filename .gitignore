@@ -22,10 +22,8 @@ datasets/*
 *.nav
 *.toc
 
+
 # Reports
 reports/**/*.pdf
 reports/**/*plots
-reports/**/data
-
-# Submission
-submission/args/*.args
+reports/**/data*

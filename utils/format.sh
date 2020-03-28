@@ -1,8 +1,6 @@
 #!/bin/bash
 set -e  # Exit on first failure
 
-source utils/activate_miniconda
-source utils/activate_environment
-python -m black src submission
-python -m isort src -rc
-python -m isort submission -rc
+python -m black [project_name] submit
+python -m isort [project_name] -rc
+python -m isort submit -rc
