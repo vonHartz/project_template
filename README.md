@@ -36,23 +36,6 @@ poetry install
 pre-commit install
 ```
 
-## General Usage
-
-### Format and clean
-
-```bash
-bash utils/format.sh
-```
-
-```bash
-bash utils/clean_experiments.sh
-```
-
-### Do not run pre-commit hooks
-
-To commit without runnning `pre-commit` use `git commit --no-verify -m <COMMIT MESSAGE>`.
-
-
 ## Project Structure
 
 ```

@@ -1,11 +1,12 @@
 # Python
 __pycache__
 
+# Jetbrains
+.idea/*
 
 # Experiments and data
 experiments/*
 datasets/*
-
 
 # Latex
 *.aux
@@ -21,7 +22,6 @@ datasets/*
 *.out
 *.nav
 *.toc
-
 
 # Reports
 reports/**/*.pdf
