@@ -4,19 +4,9 @@ To use the template change
 * `[execution_file.py]` in `[project_name]` and in the `README.md`
 * `[project_name]` in the folder structure
 * `[project_name]` in the `README.md` (3x)
-* `[project_name]` in `utils/format.sh`
 * `[project_name]` and `[authors]` in `pyproject.toml`
 
-
-**Table of Contents**
-
- * [Installation](#installation)
- * [General Usage](#general-usage)
-    * [Format and clean](#format-and-clean)
-    * [Do not run pre-commit hooks](#do-not-run-pre-commit-hooks)
- * [Project Structure](#project-structure)
- * [License](#license)
-
+You will probably also want to change the license.
 
 ## Installation
 
@@ -39,7 +29,7 @@ pre-commit install
 ## Project Structure
 
 ```
-├── datasets/                       <<  Raw and processed datasets
+├── data/                           <<  Raw and processed data
 │   └── <DATASET>/                  <<  Each dataset gets its own directory
 │
 ├── [project_name]/                 <<  Main code of the project
@@ -47,19 +37,16 @@ pre-commit install
 │   ├── <LIBRARY>/                  <<  Libraries implementing parts of the project
 │   └── [execution_file.py]         <<  Entry point for execution
 │
-├── experiments/                    <<  Logs and other files generated during runtime
-│   ├── cluster_oe/                 <<  Output and error files from clusters
+├── results/                        <<  Logs and other files generated during runtime
 │   ├── <EXPERIMENT_GROUP>/         <<  Experiments are grouped
 │   └── test/                       <<  Non production experiments get a test group
 │
 ├── install/                        <<  Scripts for installation
 │
-├── reports/                        <<  Analysis, presentations, ...
+├── reports/                        <<  Plots, analysis, presentations, papers, ...
 │   └── <REPORT>/                   <<  Each report gets its own directory
 │
-├── submit/                         <<  Tooling for cluster submissions
-│
-└── utils/                          <<  General purpose scripts
+└── submit/                         <<  Tooling for cluster submissions
 ```
 
 ## License

@@ -2,6 +2,7 @@
 @list:
   just --list
 
-# Format python code in {src, submission}
-format:
-  bash utils/format.sh
+# Submit job
+submit:
+  #!/bin/bash
+  set -e  # Stop on first failure
