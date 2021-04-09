@@ -1,10 +1,11 @@
 # Project Template
 
 To use the template change
-* `[execution_file.py]` in `[project_name]` and in the `README.md`
 * `[project_name]` in the folder structure
 * `[project_name]` in the `README.md` (3x)
 * `[project_name]` and `[authors]` in `pyproject.toml`
+* `[project_name]` in `[project_name]/run.py`
+* `project_name` in `[project_name]/configs/hydra/job_logging/full.yaml`
 
 You will probably also want to change the license.
 
@@ -35,7 +36,7 @@ pre-commit install
 ├── [project_name]/                 <<  Main code of the project
 │   ├── analysis/                   <<  Analysis tools
 │   ├── <LIBRARY>/                  <<  Libraries implementing parts of the project
-│   └── [execution_file.py]         <<  Entry point for execution
+│   └── run.py                      <<  Entry point for execution
 │
 ├── results/                        <<  Logs and other files generated during runtime
 │   ├── <EXPERIMENT_GROUP>/         <<  Experiments are grouped

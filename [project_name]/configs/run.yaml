@@ -1,0 +1,11 @@
+defaults:
+  - hydra/job_logging: full
+
+experiment_group: test
+experiment_name: test_${run_id}
+run_id: ${now:%Y-%m-%d-%H-%M-%S}
+seed: 2
+
+hydra:
+  run:
+    dir: results/${experiment_group}/${experiment_name}

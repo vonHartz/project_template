@@ -3,9 +3,9 @@
 ## Tools you need to know about
 
 * [Poetry](https://python-poetry.org/docs/) to manage python packages (replaces pip), make sure to understand the roles of `poetry.lock` and `pyproject.toml`
+* [Hydra](https://hydra.cc/docs/intro/) to run and configure python scripts (replaces argparse)
+* [justfile](https://github.com/casey/just) to run and document commands and shell scripts (replaces Makefile)
 * [pre-commit](https://pre-commit.com/) to run auto-formatting, code quality checks, and bug checks at each commit
-* [justfile](https://github.com/casey/just) to run and document commands and scripts (replaces Makefile)
-
 
 ## Add dependencies
 
