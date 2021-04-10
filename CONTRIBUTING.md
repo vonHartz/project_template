@@ -7,6 +7,24 @@
 * [justfile](https://github.com/casey/just) to run and document commands and shell scripts (replaces Makefile)
 * [pre-commit](https://pre-commit.com/) to run auto-formatting, code quality checks, and bug checks at each commit
 
+## Developer Installation
+
+```bash
+bash install_dev_utils/miniconda.sh    # For managing python versions
+bash install_dev_utils/poetry.sh       # Python package manager
+bash install_dev_utils/just.sh         # Command runner
+```
+
+```bash
+conda create -n [project_name] python=3.7.5
+conda activate [project_name]
+```
+
+```bash
+poetry install
+pre-commit install
+```
+
 ## Add dependencies
 
 To install a dependency use
