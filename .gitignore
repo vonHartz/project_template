@@ -5,8 +5,8 @@ __pycache__
 .idea/*
 
 # Experiments and data
-experiments/*
-datasets/*
+results/*
+data/*
 
 # Latex
 *.aux
