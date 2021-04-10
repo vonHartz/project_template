@@ -8,7 +8,7 @@
 1. Instantiate template and push
     ```bash
     cd <REPOSITORY_NAME>
-    cookiecutter --overwrite-if-exists --output-dir .. .  # Make sure to use the correct repository name.
+    cookiecutter --overwrite-if-exists --output-dir .. .  # Use the correct repository name!
     rm -r cookiecutter.json \{\{cookiecutter.repository_name\}\}
     git add -A && git commit -m "instantiate project template && git push"
     ```
