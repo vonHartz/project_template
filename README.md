@@ -10,7 +10,7 @@
     cd <REPOSITORY_NAME>
     cookiecutter --overwrite-if-exists --output-dir .. .  # Use the correct repository name!
     rm -r cookiecutter.json \{\{cookiecutter.repository_name\}\}
-    git add -A && git commit -m "instantiate project template && git push"
+    git add -A && git commit -m "instantiate project template" && git push
     ```
 
 
@@ -27,7 +27,7 @@ More flexible approach that does not use github.
     git init
     git add -A
     git commit -m "initial commit"
-    git branch -M main
-    git remote add origin https://github.com/DaStoll/test_temp.git
-    git push -u origin main
+    git branch -M master
+    git remote add origin <REPOSITORY_URL>
+    git push -u origin master
     ```
