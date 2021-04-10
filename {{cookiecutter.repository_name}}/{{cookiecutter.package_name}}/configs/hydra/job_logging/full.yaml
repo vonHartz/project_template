@@ -29,6 +29,6 @@ root:
  handlers: [full_file]
 
 loggers:
-  project_name:
+  {{cookiecutter.repository_name}}.{{cookiecutter.package_name}}:
     level: INFO
     handlers: [console, main_file]

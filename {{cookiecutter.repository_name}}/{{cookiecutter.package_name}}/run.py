@@ -11,7 +11,7 @@ from gitinfo import gitinfo
 from omegaconf import OmegaConf
 
 
-logger = logging.getLogger("[project_name].run")
+logger = logging.getLogger("{{cookiecutter.package_name}}.run")
 
 
 def _set_seeds(seed):

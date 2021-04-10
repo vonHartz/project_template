@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "[project_name]"
+name = "{{cookiecutter.package_name}}"
 version = "0.1.0"
 description = ""
-authors = ["[authors]"]
+authors = ["{{cookiecutter.package_name}}"]
 readme = "README.md"
 license = "unlicense"
 
