@@ -2,7 +2,7 @@
 
 To use the template change
 * `[project_name]` in the folder structure
-* `[project_name]` in the `README.md` (3x)
+* `[project_name]` in the `README.md` (4x)
 * `[project_name]` and `[authors]` in `pyproject.toml`
 * `[project_name]` in `[project_name]/run.py`
 * `project_name` in `[project_name]/configs/hydra/job_logging/full.yaml`
@@ -12,6 +12,12 @@ You will probably also want to change the license.
 ## Developer Install
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Run local
+
+```bash
+python -m [project_name].run
+```
 
 ## Project Structure
 
