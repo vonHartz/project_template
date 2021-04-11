@@ -6,13 +6,14 @@
 {% raw %}
 
 # Submit slurm job
-submit partition max_parallel_jobs repeats:
+submit partition max_parallel_jobs repeats experiment_group=test:
   #!/bin/bash
   set -e  # Stop on first failure{% endraw %}
 
   python -m {{cookiecutter.package_name}}.run \
-    {% raw %}partition={{partition}} \
+    {% raw %}hydra.launcher.partition={{partition}} \
     seed=range\(0,{{repeats}}\) \
-    max_jobs={{max_parallel_jobs}} \
+    experiment_group={{experiment_group}} \
+    hydra.launcher.max_jobs={{max_parallel_jobs}} \
     --multirun{% endraw %}
 {% endif %}
