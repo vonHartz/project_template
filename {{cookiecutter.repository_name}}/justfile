@@ -8,7 +8,7 @@
 submit partition max_parallel_jobs repeats:
   #!/bin/bash
   set -e  # Stop on first failure
-  
+
   {% endraw %}
   python -m {{cookiecutter.package_name}}.run.py \
     {% raw %}parition={{partition}} \
