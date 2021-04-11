@@ -35,7 +35,7 @@ def run(args):
         git_info = gitinfo.get_git_info()
         logger.info(f"Commit hash: {git_info['commit']}")
         logger.info(f"Commit date: {git_info['author_date']}")
-    logger.info(f"Arguments:\n{OmegaConf.to_yaml(args)}")
+    logger.info(f"Arguments:\n{OmegaConf.to_yaml(args, resolve=True)}")
 
     # Do stuff here
 
