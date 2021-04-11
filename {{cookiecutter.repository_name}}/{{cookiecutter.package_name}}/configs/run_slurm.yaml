@@ -14,7 +14,7 @@ hydra:
   launcher:
     max_parallel_jobs: ???
     pre_execute_command: source ~/.conda/bin/activate {{cookiecutter.package_name}}
-    execute_command: python -m {{cookiecutter.package_name}}.run --config-name run_slurm
+    execute_command: python -m {{cookiecutter.package_name}}.run seed=${seed} experiment_group=${experiment_group} experiment_name=${experiment_name}
     time: 0-02:00
     cpus_per_task: 1
     gpus: 0
