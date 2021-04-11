@@ -12,9 +12,9 @@ submit partition max_parallel_jobs repeats experiment_group="test":
 
   python -m {{cookiecutter.package_name}}.run \
     {% raw %}hydra.launcher.partition={{partition}} \
+    hydra.launcher.max_parallel_jobs={{max_parallel_jobs}} \
     seed=range\(0,{{repeats}}\) \
     experiment_group={{experiment_group}} \
-    hydra.launcher.max_jobs={{max_parallel_jobs}} \
     --config-name run_slurm \
     --multirun{% endraw %}
 {% endif %}

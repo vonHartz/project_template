@@ -12,6 +12,7 @@ hydra:
     subdir: ${experiment_name}
 
   launcher:
+    max_parallel_jobs: ???
     pre_execute_command: source ~/.conda/bin/activate {{cookiecutter.package_name}}
     execute_command: python -m {{cookiecutter.package_name}}.run
     time: 0-02:00
