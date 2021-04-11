@@ -2,5 +2,8 @@
     "repository_name": "project_template",
     "package_name": "project_template",
     "readme_title": "Project Template",
-    "authors": "X, Y"
+    "authors": "X, Y",
+    "license": ["MIT", "empty"]
+    "year": "{% now 'utc', '%Y' %}",
+    "_extensions": ["jinja2_time.TimeExtension"]
 }

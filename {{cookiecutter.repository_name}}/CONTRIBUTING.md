@@ -15,9 +15,11 @@ bash install_dev_utils/poetry.sh       # Python package manager
 bash install_dev_utils/just.sh         # Command runner
 ```
 
+Create and activate python environment. For example, using conda:
+
 ```bash
-conda create -n [project_name] python=3.7.5
-conda activate [project_name]
+conda create -n {{cookiecutter.package_name}} python=3.7.5
+conda activate {{cookiecutter.package_name}}
 ```
 
 ```bash
