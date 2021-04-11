@@ -18,7 +18,7 @@
 
 More flexible approach that does not require github.
 
-1. Create remote repository
+1. Create remote repository (e.g., on Github, or Gitlab)
 1. In some python environment `pip install cookiecutter`.
 1. Run `cookiecutter https://github.com/DaStoll/project_template.git`
 1. Create and push repository. For example:
