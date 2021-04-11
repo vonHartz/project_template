@@ -2,8 +2,9 @@
     "repository_name": "project_template",
     "package_name": "project_template",
     "readme_title": "Project Template",
-    "authors": "X, Y",
-    "include_submit_dir": ["Y", "N"],
+    "authors": null,
+    "submit_strategy": ["Use submit directory for scripts", "Use hydra plugin","None"],
+    "create_report_dir": ["Yes: Create report directory", "No"],
     "license": ["MIT", "empty"],
     "year": "{% now 'utc', '%Y' %}",
     "_extensions": ["jinja2_time.TimeExtension"]
