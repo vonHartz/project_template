@@ -11,7 +11,7 @@ submit partition max_parallel_jobs repeats:
   set -e  # Stop on first failure{% endraw %}
 
   python -m {{cookiecutter.package_name}}.run \
-    {% raw %}parition={{partition}} \
+    {% raw %}partition={{partition}} \
     seed=range\(0,{{repeats}}\) \
     max_jobs={{max_parallel_jobs}} \
     --multirun{% endraw %}
