@@ -6,7 +6,7 @@
 {% raw %}
 
 # Submit slurm job
-submit partition max_parallel_jobs repeats experiment_group=test:
+submit partition max_parallel_jobs repeats experiment_group="test":
   #!/bin/bash
   set -e  # Stop on first failure{% endraw %}
 
@@ -15,5 +15,6 @@ submit partition max_parallel_jobs repeats experiment_group=test:
     seed=range\(0,{{repeats}}\) \
     experiment_group={{experiment_group}} \
     hydra.launcher.max_jobs={{max_parallel_jobs}} \
+    --config-name run_slurm \
     --multirun{% endraw %}
 {% endif %}
