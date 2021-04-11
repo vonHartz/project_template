@@ -3,7 +3,8 @@
     "package_name": "project_template",
     "readme_title": "Project Template",
     "authors": "X, Y",
-    "license": ["MIT", "empty"]
+    "include_submit_dir": ["Y", "N"],
+    "license": ["MIT", "empty"],
     "year": "{% now 'utc', '%Y' %}",
     "_extensions": ["jinja2_time.TimeExtension"]
 }
