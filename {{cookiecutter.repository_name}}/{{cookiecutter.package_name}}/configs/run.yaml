@@ -2,7 +2,7 @@ defaults:
   - hydra/job_logging: full
 
 experiment_group: test
-experiment_name: test_${run_id}
+experiment_name: test_${now:%Y-%m-%d-%H-%M-%S}
 seed: 2
 
 hydra:
