@@ -16,7 +16,7 @@
 
 ## Installation Via Cookiecutter and Manual Repository Creation
 
-More flexible approach that does not use github.
+More flexible approach that does not require github.
 
 1. Create remote repository
 1. In some python environment `pip install cookiecutter`.
