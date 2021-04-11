@@ -10,6 +10,10 @@ license = "unlicense"
 python = ">=3.7,<3.10"
 hydra-core = "^1.0.0"
 python-git-info = "^0.6.1"
+{%- if cookiecutter.submit_strategy == "Use hydra plugin" -%}
+{% raw %}
+hydra-script-launcher = {git = "https://github.com/DaStoll/hydra_script_launcher.git"}{% endraw %}
+{% endif %}
 
 [tool.poetry.dev-dependencies]
 jupyter = "^1.0"

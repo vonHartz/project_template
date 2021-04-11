@@ -2,7 +2,14 @@
 @list:
   just --list
 
-# Submit job
-submit:
+{%- if cookiecutter.submit_strategy == "Use hydra plugin" -%}
+# Submit slurm job
+submit partition max_parallel_jobs repeats:
   #!/bin/bash
   set -e  # Stop on first failure
+
+  python -m {{cookiecutter.package_name}}.run.py \
+    {% raw %}parition={{partition}} \
+    seed=range\(0,{{repeats}}\) \
+    max_jobs={{max_parallel_jobs}}{% endraw %}
+{% endif %}

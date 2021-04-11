@@ -1,0 +1,24 @@
+defaults:
+  - hydra/launcher: script
+  - hydra/job_logging: full
+
+seed: ???
+experiment_group: ???
+experiment_name: ${seed}
+
+hydra:
+  sweep:
+    dir: results/${experiment_group}
+    subdir: ${experiment_name}
+
+  launcher:
+    pre_execute_command: source ~/.conda/bin/activate {{cookiecutter.package_name}}
+    execute_command: python -m {{cookiecutter.package_name}}.run.py
+    time: 0-02:00
+    cpus_per_task: 1
+    gpus: 0
+    mem_per_cpu: 2000
+    job_name: misc
+    partition: ???
+    error: ${hydra.sweep.dir}/cluster_oe/%A_%x_%t.oe
+    output: ${hydra.sweep.dir}/cluster_oe/%A_%x_%t.oe
